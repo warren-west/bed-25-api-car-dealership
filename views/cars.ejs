@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership | Cars</title>
+    <%- include('./partials/styles-head.ejs') %>
+</head>
+
+<body>
+    <%- include('./partials/navbar.ejs') %>
+        <div class="container">
+
+            <h1 class="display-2 mb-4">Cars</h1>
+            <form action="/cars" method="get">
+                <label>Search brand</label>
+                <input type="text" name="brand" placeholder="honda">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+
+            <% if (cars.length===0) { %>
+                <i>Sold out! ⚠️</i>
+                <form action="/populate/cars" method="post">
+                    <button type="submit">Add Car Data</button>
+                </form>
+
+                <% } else { %>
+                    <ul>
+                        <% cars.forEach(c=> { %>
+                            <li>
+                                <%= c.brand %>
+                                    <%= c.model %> (<%= c.year %>)
+                            </li>
+                            <% }) %>
+                    </ul>
+                    <% } %>
+        </div>
+
+        <%- include('./partials/scripts.ejs') %>
+</body>
+
+</html>

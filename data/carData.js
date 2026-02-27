@@ -1,0 +1,22 @@
+module.exports = [
+    { model: "911 Carrera", year: "2023", brand: "Porsche", customerId: 1 },
+    { model: "Civic", year: "2021", brand: "Honda", customerId: 2 },
+    { model: "Model 3", year: "2022", brand: "Tesla", customerId: 3 },
+    { model: "Mustang", year: "1967", brand: "Ford", customerId: 4 },
+    { model: "Corolla", year: "2024", brand: "Toyota", customerId: 5 },
+    { model: "G-Wagon", year: "2023", brand: "Mercedes-Benz", customerId: 6 },
+    { model: "A4", year: "2020", brand: "Audi", customerId: 7 },
+    { model: "F-150", year: "2022", brand: "Ford", customerId: 8 },
+    { model: "M3", year: "2023", brand: "BMW", customerId: 9 },
+    { model: "Wrangler", year: "2021", brand: "Jeep", customerId: 10 },
+    { model: "Range Rover", year: "2024", brand: "Land Rover", customerId: 11 },
+    { model: "CX-5", year: "2022", brand: "Mazda", customerId: 12 },
+    { model: "Golf GTI", year: "2023", brand: "Volkswagen", customerId: 13 },
+    { model: "Challenger", year: "1970", brand: "Dodge", customerId: 14 },
+    { model: "Camry", year: "2021", brand: "Toyota", customerId: 15 },
+    { model: "E-Tron", year: "2023", brand: "Audi", customerId: 16 },
+    { model: "V60", year: "2022", brand: "Volvo", customerId: 17 },
+    { model: "Altima", year: "2020", brand: "Nissan", customerId: 18 },
+    { model: "Tucson", year: "2024", brand: "Hyundai", customerId: 19 },
+    { model: "Countach", year: "1985", brand: "Lamborghini", customerId: 20 }
+]
