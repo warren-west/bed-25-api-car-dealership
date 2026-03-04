@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize')
 
-// create an export the Cars model
+// Create and export the Cars model
 module.exports = (sequelize) => {
     const Cars = sequelize.define('Cars', {
         brand: DataTypes.STRING,

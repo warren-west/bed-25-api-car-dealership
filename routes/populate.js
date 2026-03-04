@@ -2,6 +2,7 @@ const router = require('express').Router()
 const db = require('../models')
 const CarService = require('../services/CarService')
 const carService = new CarService(db)
+// Below are services we haven't used yet because we haven't implemented populating customers yet
 // const CustomerService = require('../services/CustomerService')
 // const customerService = new CarService(db)
 

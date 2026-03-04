@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership | Car Details | <%= carDetails.model %></title>
+    <%- include('./partials/styles-head.ejs') %>
+</head>
+
+<body>
+    <%- include('./partials/navbar.ejs') %>
+    <div class="container">
+
+        <h1 class="display-4 mb-4">Car Details</h1>
+        <div class="row">
+
+            <div class="col">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/407/377/original/car-isolated-on-white-background-generate-ai-free-photo.jpg" alt="<%= carDetails.brand %> <%= carDetails.model %>" class="img-fluid w-50">
+            </div>
+            <div class="col">
+                <!-- car brand (Honda) -->
+                <p><%= carDetails.brand %></p>
+                
+                <!-- car model (Civic) -->
+                <p><%= carDetails.model %></p>
+                
+                <!-- car year (2011) -->
+                <p><%= carDetails.year %></p>
+            </div>
+
+        </div>
+        <div class="row">
+            <h4>Description:</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus enim vero ipsam. Quas laudantium corporis quae, sint minus error! Eius, praesentium corrupti. Quis magnam minima incidunt at! Necessitatibus dolor modi repellat amet! Recusandae et sint harum culpa esse ab quibusdam, nostrum eum, iure assumenda itaque autem quas modi, soluta vitae maxime odit repellat voluptatibus quisquam numquam ad quis quae totam ducimus? Reiciendis, molestiae laudantium inventore eum nostrum temporibus quo? Fugiat expedita sapiente nesciunt alias voluptate blanditiis ipsam velit aperiam. Molestiae ipsa saepe, laborum, velit aperiam doloribus consequatur rem eum, deleniti est totam nemo excepturi. Laboriosam itaque facere dignissimos reiciendis?</p>
+        </div>
+    </div>
+
+    <%- include('./partials/scripts.ejs') %>
+</body>
+
+</html>
