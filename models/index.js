@@ -11,6 +11,7 @@ const sequelize = new Sequelize({
     username: process.env.DB_USER,
     password: process.env.DB_PASS,
     dialect: process.env.DIALECT,
+    port: process.env.DB_PORT,
     logging: false,
 })
 
